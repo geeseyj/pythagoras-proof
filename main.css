@@ -1,0 +1,53 @@
+.triangle {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+#triangle3 {
+  animation-delay: 2s;
+  animation-name: moveTriangle3;
+}
+
+#triangle4 {
+  animation-delay: 4s;
+  animation-name: moveTriangle4;
+}
+
+#triangle2 {
+  animation-delay: 6s;
+  animation-name: moveTriangle2;
+}
+
+
+
+@keyframes moveTriangle3 {
+  from {
+   transform: translate(0, 0); 
+  }
+
+  to {
+    transform: translate(-60px, 0);
+  }
+}
+
+@keyframes moveTriangle4 {
+  from {
+   transform: translate(0, 0); 
+  }
+
+  to {
+    transform: translate(0, -80px);
+  }
+}
+
+@keyframes moveTriangle2 {
+  from {
+   transform: translate(0, 0); 
+  }
+
+  to {
+    transform: translate(80px, 60px);
+  }
+}
